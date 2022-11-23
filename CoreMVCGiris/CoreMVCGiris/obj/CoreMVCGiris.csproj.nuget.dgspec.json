@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\burkay.akgul\\Desktop\\Core Mufretadd\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj": {}
+    "C:\\Users\\burkay.akgul\\Documents\\GitHub\\NetMufredat\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj": {}
   },
   "projects": {
-    "C:\\Users\\burkay.akgul\\Desktop\\Core Mufretadd\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj": {
+    "C:\\Users\\burkay.akgul\\Documents\\GitHub\\NetMufredat\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\burkay.akgul\\Desktop\\Core Mufretadd\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj",
+        "projectUniqueName": "C:\\Users\\burkay.akgul\\Documents\\GitHub\\NetMufredat\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj",
         "projectName": "CoreMVCGiris",
-        "projectPath": "C:\\Users\\burkay.akgul\\Desktop\\Core Mufretadd\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj",
+        "projectPath": "C:\\Users\\burkay.akgul\\Documents\\GitHub\\NetMufredat\\CoreMVCGiris\\CoreMVCGiris\\CoreMVCGiris.csproj",
         "packagesPath": "C:\\Users\\burkay.akgul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\burkay.akgul\\Desktop\\Core Mufretadd\\CoreMVCGiris\\CoreMVCGiris\\obj\\",
+        "outputPath": "C:\\Users\\burkay.akgul\\Documents\\GitHub\\NetMufredat\\CoreMVCGiris\\CoreMVCGiris\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

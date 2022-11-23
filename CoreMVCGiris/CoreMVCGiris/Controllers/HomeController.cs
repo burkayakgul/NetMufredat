@@ -1,5 +1,6 @@
 ﻿using CoreMVCGiris.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 using System.Diagnostics;
 
 namespace CoreMVCGiris.Controllers
@@ -13,7 +14,7 @@ namespace CoreMVCGiris.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index()
         {
             return View();
         }

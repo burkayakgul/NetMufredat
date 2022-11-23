@@ -17,15 +17,29 @@
 #endregion
 
 
+#region .Net 7 Yenilikleri
+/*     **** Rate Limit ****
+ *  Rate limit api'larımıza gelen istek limitini sınırlamamıza yarayan güvenlik yapılarıdır, kötü niyetli kullanıcıların api'ımızı
+ *      isteğe boğup çalışamaz hale getirmesini önleyen bir sistemdir. Rate limit işlemlerini program.cs üzerinden builder nesnemiz
+ *      aracılığı ile yaparız.
+ *      
+ *     **** Output Caching ****
+ *  Output caching özelliği 
+ *     
+*/
+#endregion
+
 // .Net 6 ile birlikte builder nesnesini oluşturabilmek için gelmiştir, .net 5'teki Host sınıfına karşılık gelmektedir.
 //  Uygulamayı inşa edeceğimiz nesneyi oluşturmaktadır.
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddOutputCache();
 // Elde ettiğimiz builder nesnesini build yani inşa eder.
 var app = builder.Build();
+
+app.UseOutputCache();
 
 // Eğer programımız geliştirme sürecinde değilse kullanıcılara hatalı isteklerini göstermek için error sayfalarına yönlendiren yapı
 if (!app.Environment.IsDevelopment())

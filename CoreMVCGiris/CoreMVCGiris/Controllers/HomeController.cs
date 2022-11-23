@@ -14,13 +14,40 @@ namespace CoreMVCGiris.Controllers
             _logger = logger;
         }
 
-        public string Index()
+        #region Controllerlar
+        /* Controllerlar view ile modellerimiz arasındaki katmandır, client tarafından gelen isteklere yanıt verip
+         * gerekli işlemleri yaparak cevap döndüren yapılardır. Controller sınıflarını oluştururken belirli kurallara
+         * dikkat ederiz, controller sınıfını önce sınıfın ismini sonuna controller yazarak oluştururuz örneğin
+         * ArabaController gibi ve bu oluşturduğumuz sınıfı Controller base classından kalıtım alırız. Controller içerisine
+         * tanımladığımız metodlar action metodları olarak geçer bu metodlar kullanıcılara bir view sayfası veya direkt olarak
+         * veri döndürebilir. Action sayfaları varsayılan olarak HttpPost verb'ünü kullanır bu kullanıcıdan gelen istege yanıt
+         * veren sayfa ve verileri gönderen protokoldür, kullanıcılardan veri alacağımız zaman HttpPost protokolü ile verilerimizi alırız.
+         * 
+         */
+        #endregion
+
+
+        public IActionResult Index()
         {
             return View();
         }
 
+
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Kullanici() {
+            
+            return View(new Kullanici { AdSoyad = "Burkay Akgül", ID = 1, Yas = 26});
+        }
+
+        [HttpPost]
+        public IActionResult Kullanici(Kullanici kullanici)
+        {
+
             return View();
         }
 

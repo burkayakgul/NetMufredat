@@ -24,7 +24,10 @@
  *      aracılığı ile yaparız.
  *      
  *     **** Output Caching ****
- *  Output caching özelliği 
+ *  Output caching özelliği ile apilarımıza gelen istekleri önce cache belleğe alarak belirli süre içerisinde tekrarlanan
+ *      istekleri güncelleme yapmadan cache'deki sonucu gösterir. Cacheleme işlemini anlık güncellenmesi gerekmeyen işlemlerde
+ *      kullanabiliriz böylece yapılacak gereksiz isteklere karşı programımızın performansını iyileştiririz.
+ *      
  *     
 */
 #endregion

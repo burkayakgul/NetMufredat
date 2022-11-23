@@ -1,0 +1,14 @@
+﻿@model Kullanici
+@*@model ile view sayfalarımıza model bağlarız, razor sayfaları (cshtml) sayfaya gelen verileri işleyebilmek için
+    bir modele ihtiyaç duyar.
+*@
+@{
+    ViewData["Title"] = "Kullanici";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Kullanici</h1>
+@*Burada model ile controller üzerinden gelen verilerimizi yazdırıyoruz.*@
+<p>@Model.ID</p>
+<p>@Model.AdSoyad</p>
+<p>@Model.Yas</p>
